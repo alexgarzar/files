@@ -30,7 +30,7 @@ jobs:
           TARGET_DIR=$(mktemp -d)
           mv "$CLONE_DIR/.git" "$TARGET_DIR"
           date > time.txt
-          cp -R time.txt "$TARGET_DIR"
+          cp time.txt "$TARGET_DIR"
           cd "$TARGET_DIR"
           ls -la
       - name: commit
